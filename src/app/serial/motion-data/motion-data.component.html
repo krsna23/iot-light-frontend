@@ -1,1 +1,24 @@
-<p>motion-data works!</p>
+<table class="table">
+    <thead>
+        <tr >
+        <th scope="col">id</th>
+        <th scope="col">timestamp</th>
+        <th scope="col">sensorId</th>
+        <th scope="col">status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of motionData ">
+            <th scope="row">{{data.id}}</th>
+            <td>{{data.timestamp}}</td>
+            <td>{{data.sensorId}}</td>
+            <td>{{data.status}}</td>
+        </tr>
+
+    </tbody>
+</table>
+
+
+<p>Message from parent: {{motionData}}</p>
+<h1>timestamp: {{ motionData[2]?.timestamp }}</h1>
+<p>Timestamp from position 1: {{ motionData[1]?.timestamp }}</p>

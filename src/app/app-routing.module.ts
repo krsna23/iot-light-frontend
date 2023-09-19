@@ -9,8 +9,8 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
-  {path: 'arduino', component: SerialDataComponent},
-  {path: 'motion', component: MotionDataComponent}
+  {path: 'serial-data/:data', component: SerialDataComponent},
+  {path: 'motion-data/:data', component: MotionDataComponent}
 ];
 
 @NgModule({

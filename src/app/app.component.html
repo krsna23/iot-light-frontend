@@ -41,11 +41,13 @@
           <div class="card-body">
             <h5 class="card-title">Get Motion Data</h5>
             <p class="card-text">All motion data: time at which motion in detected. </p>
-            <a routerLink="/motion" class="btn btn-primary" (click)="getMotionData()">Get Motion Data</a>
+            <a routerLink="/motion-data/:data" class="btn btn-primary" (click)="getMotionData()">Get Motion Data</a>
           </div>
         </div>
       </section>
     </main>
+    
+    <!-- <app-motion-data [message]="message"></app-motion-data> -->
     <router-outlet></router-outlet>
   </body>
 </html>

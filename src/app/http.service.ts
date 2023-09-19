@@ -5,15 +5,18 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
+
 export class HttpService {
 
   constructor(private http: HttpClient) { }
     
   getSerial(){
-    return this.http.get('http://localhost:3000/arduino')
-  }
+    return this.http.get('http://localhost:3000/all')
+  } 
 
   getMotion(){
-    return this.http.get('http://localhost:3000/arduino/motion')
+    console.log("Get request sent.")
+    return this.http.get('http://localhost:3000/motion')
   }
+
 }
