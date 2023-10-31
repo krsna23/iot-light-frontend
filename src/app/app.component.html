@@ -6,20 +6,41 @@
     <title>Iot Light Project</title>
   </head>
   <body>
-    <nav class="navbar bg-body-tertiary">
+    <!-- <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">IoTlight</span>
       </div>
-    </nav>
+    </nav> -->
+    <div class="logo">
+      IotLight
+    </div>
     <main>
-      <div>
+
+      <div style="color:white">
+        <div class="stars1">
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>
+        </div>
+
+        <div class="stars2">
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>  
+        </div>
+
+        <div class="stars3">
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>
+          <img src="../assets/ellipse1.png"/>  
+        </div>
 
         <h2>Dashboard</h2>
-        <p>Welcome to the dashboard for the IoTlight Project. 
+        <!-- <p>Welcome to the dashboard for the IoTlight Project. 
           Here You can access the data from the database.
           To get all the data, click on the 'Get Data' button. 
           To Get only the motion data click on the 'Get Motion Data' button.
-        </p>
+        </p> -->
       </div>
 
       <section class="cards">
@@ -28,7 +49,7 @@
             All data
           </div>
           <div class="card-body">
-            <h5 class="card-title">Get all the data from the database.</h5>
+            <h5 class="card-title">Get all the data</h5>
             <p class="card-text">All data including motion and not motion.</p>
             <a routerLink="/arduino" class="btn btn-primary" (click)="getSerialData()">Get Data</a>
           </div>

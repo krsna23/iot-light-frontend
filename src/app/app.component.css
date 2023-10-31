@@ -1,8 +1,221 @@
+body{
+    background-image: url("../assets/background.png");
+    height: 100vh;
+}
+
+main{
+    margin: 8px;
+}
+.logo{
+    font-size: 2vw;
+    color: rgb(215, 183, 215);
+    padding-top: 3vh;
+    margin-left: 2vw;
+    background-image: url("../assets/ellipse.png");
+}
+
+td{
+    width: 3vw;
+}
 .cards{
     display: flex;
     justify-content: space-around;
 }
 
 h2{
-    margin-left: 40%;
+    margin-left: 4vw;
+    margin-top: 16vh;
+    color: rgb(141, 120, 161);
+}
+
+.stars1 img{
+    width: 80px;
+    animation: star1 8s linear infinite;
+}
+
+.stars2 img{
+    width: 80px;
+    animation: star2 7s linear infinite;
+}
+
+.stars3 img{
+    width: 80px;
+    animation: star3 9s linear infinite;
+}
+
+
+.stars1, .stars2, .stars3 {
+    margin-left: 60vw;
+    margin-top: 60vh;
+    width: 22vw;
+    position: absolute;
+}
+
+/* 
+.stars2 {
+    width: 22vw;
+    position: absolute;
+}
+
+.stars3 {
+    width: 22vw;
+    position: absolute;
+} */
+
+
+@keyframes star1{
+
+    0%{
+        opacity: 0;
+    }
+    50%{
+        transform: translateX(-50vh);
+        opacity: .7;
+    }
+    75%{
+        transform: translateX(-30vh);
+        opacity: .8;
+    }
+    100%{
+        transform: translateX(-10vh);
+        opacity: .3;
+    }
+}
+
+@keyframes star2{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        transform: translateX(80vw);
+        opacity: .7;
+    }
+    75%{
+        transform: translateX(90vw);
+        opacity: .8;
+    }
+    100%{
+        transform: translateX(96vw);
+        opacity: .3;
+    }
+}
+
+@keyframes star3{
+    0%{
+        opacity: .3;
+    }
+    50%{
+        transform: translateX(40vw);
+        opacity: .7;
+    }
+    75%{
+        transform: translateX(20vh);
+        opacity: .8;
+    }
+    100%{
+        transform: translateX(3vh);
+        opacity: .3;
+    }
+}
+
+/* for first element */
+.stars1 img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.stars1 img:nth-child(2){
+    animation-delay: 5s;
+}
+
+.stars1 img:nth-child(3){
+    animation-delay: 1s;
+}
+
+.stars1 img:nth-child(4){
+    animation-delay: 4s;
+}
+
+.stars1 img:nth-child(5){
+    animation-delay: 4s;
+}
+
+.stars1 img:nth-child(6){
+    animation-delay: 1.5s;
+}
+
+.stars1 img:nth-child(7){
+    animation-delay: 2.5s;
+}
+
+.stars1 img:nth-child(8){
+    animation-delay: 0.5s;
+}
+
+
+/* For second element */
+.stars2 img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.stars2 img:nth-child(2){
+    animation-delay: 5s;
+}
+
+.stars2 img:nth-child(3){
+    animation-delay: 1s;
+}
+
+.stars2 img:nth-child(4){
+    animation-delay: 4s;
+}
+
+.stars2 img:nth-child(5){
+    animation-delay: 4s;
+}
+
+.stars2 img:nth-child(6){
+    animation-delay: 1.5s;
+}
+
+.stars2 img:nth-child(7){
+    animation-delay: 2.5s;
+}
+
+.stars2 img:nth-child(8){
+    animation-delay: 0.5s;
+}
+
+
+/* For third element */
+
+.stars3 img:nth-child(1){
+    animation-delay: 2s;
+}
+
+.stars3 img:nth-child(2){
+    animation-delay: 5s;
+}
+
+.stars3 img:nth-child(3){
+    animation-delay: 1s;
+}
+
+.stars3 img:nth-child(4){
+    animation-delay: 4s;
+}
+
+.stars3 img:nth-child(5){
+    animation-delay: 4s;
+}
+
+.stars3 img:nth-child(6){
+    animation-delay: 1.5s;
+}
+
+.stars3 img:nth-child(7){
+    animation-delay: 2.5s;
+}
+
+.stars3 img:nth-child(8){
+    animation-delay: 0.5s;
 }
