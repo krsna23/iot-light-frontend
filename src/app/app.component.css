@@ -35,7 +35,7 @@ h2{
 
 .stars2 img{
     width: 80px;
-    animation: star2 7s linear infinite;
+    animation: star2 9s linear infinite;
 }
 
 .stars3 img{
@@ -43,11 +43,25 @@ h2{
     animation: star3 9s linear infinite;
 }
 
+.stars1 {
+    margin-left: 55vw;
+    margin-top: 48vh;
+    width: 40vw;
+    position: absolute;
+}
 
-.stars1, .stars2, .stars3 {
-    margin-left: 60vw;
-    margin-top: 60vh;
-    width: 22vw;
+.stars2 {
+    margin-left: 55vw;
+    margin-top: 45vh;
+    width: 32vw;
+    position: absolute;
+}
+
+.stars3 {
+    margin-left: 55vw;
+    margin-top: 30vh;
+    height: 22vh;
+    width: 100px;
     position: absolute;
 }
 
@@ -69,15 +83,15 @@ h2{
         opacity: 0;
     }
     50%{
-        transform: translateX(-50vh);
+        transform: translateY(-40vh);
         opacity: .7;
     }
     75%{
-        transform: translateX(-30vh);
+        transform: translateY(-60vh);
         opacity: .8;
     }
     100%{
-        transform: translateX(-10vh);
+        transform: translateY(-80vh);
         opacity: .3;
     }
 }
@@ -87,33 +101,33 @@ h2{
         opacity: .3;
     }
     50%{
-        transform: translateX(80vw);
+        transform: translate(-30vw, -30vw);
         opacity: .7;
     }
     75%{
-        transform: translateX(90vw);
+        transform: translate(-50vw, -50vw);
         opacity: .8;
     }
     100%{
-        transform: translateX(96vw);
+        transform: translate(-75vw, -75vw);
         opacity: .3;
     }
 }
 
 @keyframes star3{
     0%{
-        opacity: .3;
+        opacity: .1;
     }
     50%{
-        transform: translateX(40vw);
+        transform: translateX(-40vw);
         opacity: .7;
     }
     75%{
-        transform: translateX(20vh);
+        transform: translateX(-60vw);
         opacity: .8;
     }
     100%{
-        transform: translateX(3vh);
+        transform: translateX(-80vw);
         opacity: .3;
     }
 }
@@ -136,25 +150,25 @@ h2{
 }
 
 .stars1 img:nth-child(5){
-    animation-delay: 4s;
+    animation-delay: 0s;
 }
 
 .stars1 img:nth-child(6){
-    animation-delay: 1.5s;
+    animation-delay: 5.5s;
 }
 
 .stars1 img:nth-child(7){
-    animation-delay: 2.5s;
+    animation-delay: 6.5s;
 }
 
 .stars1 img:nth-child(8){
-    animation-delay: 0.5s;
+    animation-delay: 7.5s;
 }
 
 
 /* For second element */
 .stars2 img:nth-child(1){
-    animation-delay: 2s;
+    animation-delay: 9s;
 }
 
 .stars2 img:nth-child(2){
@@ -162,7 +176,7 @@ h2{
 }
 
 .stars2 img:nth-child(3){
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 
 .stars2 img:nth-child(4){
@@ -170,19 +184,19 @@ h2{
 }
 
 .stars2 img:nth-child(5){
-    animation-delay: 4s;
+    animation-delay: 8s;
 }
 
 .stars2 img:nth-child(6){
-    animation-delay: 1.5s;
+    animation-delay: 6.5s;
 }
 
 .stars2 img:nth-child(7){
-    animation-delay: 2.5s;
+    animation-delay: 2s;
 }
 
 .stars2 img:nth-child(8){
-    animation-delay: 0.5s;
+    animation-delay: 1s;
 }
 
 
