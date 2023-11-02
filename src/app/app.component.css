@@ -59,8 +59,8 @@ h2{
 
 .stars3 {
     margin-left: 55vw;
-    margin-top: 30vh;
-    height: 22vh;
+    margin-top: -5vh;
+    height: 42vh;
     width: 100px;
     position: absolute;
 }
@@ -84,51 +84,51 @@ h2{
     }
     50%{
         transform: translateY(-40vh);
-        opacity: .7;
+        opacity: .4;
     }
     75%{
         transform: translateY(-60vh);
-        opacity: .8;
+        opacity: .65;
     }
     100%{
         transform: translateY(-80vh);
-        opacity: .3;
+        opacity: .2;
     }
 }
 
 @keyframes star2{
     0%{
-        opacity: .3;
+        opacity: 0;
     }
     50%{
         transform: translate(-30vw, -30vw);
-        opacity: .7;
+        opacity: .4;
     }
     75%{
         transform: translate(-50vw, -50vw);
-        opacity: .8;
+        opacity: .6;
     }
     100%{
         transform: translate(-75vw, -75vw);
-        opacity: .3;
+        opacity: .1;
     }
 }
 
 @keyframes star3{
     0%{
-        opacity: .1;
+        opacity: 0;
     }
     50%{
         transform: translateX(-40vw);
-        opacity: .7;
+        opacity: .4;
     }
     75%{
         transform: translateX(-60vw);
-        opacity: .8;
+        opacity: .7;
     }
     100%{
         transform: translateX(-80vw);
-        opacity: .3;
+        opacity: .1;
     }
 }
 
@@ -168,19 +168,19 @@ h2{
 
 /* For second element */
 .stars2 img:nth-child(1){
-    animation-delay: 9s;
+    animation-delay: 0s;
 }
 
 .stars2 img:nth-child(2){
-    animation-delay: 5s;
+    animation-delay: 2s;
 }
 
 .stars2 img:nth-child(3){
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 
 .stars2 img:nth-child(4){
-    animation-delay: 4s;
+    animation-delay: 6s;
 }
 
 .stars2 img:nth-child(5){
@@ -188,7 +188,7 @@ h2{
 }
 
 .stars2 img:nth-child(6){
-    animation-delay: 6.5s;
+    animation-delay: 3s;
 }
 
 .stars2 img:nth-child(7){
@@ -207,11 +207,11 @@ h2{
 }
 
 .stars3 img:nth-child(2){
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
 
 .stars3 img:nth-child(3){
-    animation-delay: 1s;
+    animation-delay: 0s;
 }
 
 .stars3 img:nth-child(4){
@@ -219,17 +219,17 @@ h2{
 }
 
 .stars3 img:nth-child(5){
-    animation-delay: 4s;
+    animation-delay: 7.5s;
 }
 
 .stars3 img:nth-child(6){
-    animation-delay: 1.5s;
+    animation-delay: 9s;
 }
 
 .stars3 img:nth-child(7){
-    animation-delay: 2.5s;
+    animation-delay: 3s;
 }
 
 .stars3 img:nth-child(8){
-    animation-delay: 0.5s;
+    animation-delay: 5s;
 }
