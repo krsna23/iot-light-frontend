@@ -46,12 +46,60 @@
 
         </div>
 
-        <h2>Dashboard</h2>
-        <!-- <p>Welcome to the dashboard for the IoTlight Project. 
+        <h2 class="title">Dashboard</h2>
+        
+        <p class="paragraph">Welcome to the dashboard for the IoTlight Project. 
           Here You can access the data from the database.
           To get all the data, click on the 'Get Data' button. 
           To Get only the motion data click on the 'Get Motion Data' button.
-        </p> -->
+        </p>
+      </div>
+      <section class="cards">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Get All data
+            </button>
+          </h2>
+ 
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <div class="card">
+                  <div class="card-header">
+                    All data
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Get all the data</h5>
+                    <p class="card-text">All data including motion and not motion.</p>
+                    <a routerLink="/arduino" class="btn btn-primary" (click)="getSerialData()">Get Data</a>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Get Motion Data
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <div class="card">
+                <div class="card-header">
+                  Motion data
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Get Motion Data</h5>
+                  <p class="card-text">All motion data: time at which motion in detected. </p>
+                  <a routerLink="/motion-data/:data" class="btn btn-primary" (click)="getMotionData()">Get Motion Data</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- <section class="cards">
@@ -64,9 +112,9 @@
             <p class="card-text">All data including motion and not motion.</p>
             <a routerLink="/arduino" class="btn btn-primary" (click)="getSerialData()">Get Data</a>
           </div>
-        </div>
+        </div> -->
 
-        <div class="card">
+        <!-- <div class="card">
           <div class="card-header">
             Motion data
           </div>
@@ -75,8 +123,8 @@
             <p class="card-text">All motion data: time at which motion in detected. </p>
             <a routerLink="/motion-data/:data" class="btn btn-primary" (click)="getMotionData()">Get Motion Data</a>
           </div>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
     </main>
     
     <!-- <app-motion-data [message]="message"></app-motion-data> -->

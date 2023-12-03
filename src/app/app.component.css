@@ -13,6 +13,11 @@ main{
     margin-left: 2vw;
     background-image: url("../assets/ellipse.png");
 }
+.paragraph{
+    width: 85vw;
+    margin: 5vw;
+    color: rgb(224 207 224);
+}
 
 td{
     width: 3vw;
@@ -22,10 +27,21 @@ td{
     justify-content: space-around;
 }
 
-h2{
+.title{
     margin-left: 4vw;
     margin-top: 16vh;
     color: rgb(141, 120, 161);
+}
+
+.accordion{
+    width: 90vw;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20vw;
+}
+
+.accordion-button{
+    background-color: #2a115c;
 }
 
 .stars1 img{
