@@ -21,7 +21,6 @@ export class AppComponent {
       this.data=res;
       this.passDataToGetData();
     })
-    
   }
 
   getMotionData(){

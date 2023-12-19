@@ -1,3 +1,8 @@
-.table{
-    background-color: goldenrod;
+table{
+    width: 70vw;
+    border: solid;
+    border-color: goldenrod;
+    margin-left: 15vw;
+    position: absolute;
+    bottom: 1vh;
 }

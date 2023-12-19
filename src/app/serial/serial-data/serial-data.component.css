@@ -3,4 +3,11 @@ table{
     border: solid;
     border-color: goldenrod;
     margin-left: 15vw;
+    position: absolute;
+    bottom: 1vh;
+}
+
+th{
+    background: none;
+    color:aliceblue;
 }

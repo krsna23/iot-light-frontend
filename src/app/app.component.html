@@ -58,7 +58,13 @@
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            <button class="accordion-button" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#collapseOne" 
+              aria-expanded="true" 
+              aria-controls="collapseOne"
+            >
               Get All data
             </button>
           </h2>
@@ -70,9 +76,15 @@
                     All data
                   </div>
                   <div class="card-body">
-                    <h5 class="card-title">Get all the data</h5>
+                    <!-- <h5 class="card-title">Get all the data</h5> -->
                     <p class="card-text">All data including motion and not motion.</p>
-                    <a routerLink="/arduino" class="btn btn-primary" (click)="getSerialData()">Get Data</a>
+                    <a 
+                      routerLink="/serial-data/:data" 
+                      class="btn btn-primary card-button" 
+                      (click)="getSerialData()"
+                      style="background-color: #2a115c;
+                    color: rgb(240, 238, 244);"
+                    >Get Data</a>
                   </div>
                 </div>
             </div>
@@ -92,9 +104,15 @@
                   Motion data
                 </div>
                 <div class="card-body">
-                  <h5 class="card-title">Get Motion Data</h5>
+                  <!-- <h5 class="card-title">Get Motion Data</h5> -->
                   <p class="card-text">All motion data: time at which motion in detected. </p>
-                  <a routerLink="/motion-data/:data" class="btn btn-primary" (click)="getMotionData()">Get Motion Data</a>
+                  <a 
+                    routerLink="/motion-data/:data" 
+                    class="btn btn-primary card-button" 
+                    (click)="getMotionData()"
+                    style="background-color: #2a115c;
+                    color: rgb(239, 239, 243);"
+                  >Get Motion Data</a>
                 </div>
               </div>
             </div>
