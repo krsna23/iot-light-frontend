@@ -267,3 +267,30 @@ td{
 .stars3 img:nth-child(8){
     animation-delay: 5s;
 }
+
+@media (max-width: 768px) {
+
+
+    .stars1 {
+        margin-left: 55vw;
+        margin-top: 8vh;
+        width: 40vw;
+
+    }
+    
+    .stars2 {
+        margin-left: 55vw;
+        margin-top: 5vh;
+        width: 32vw;
+
+    }
+    
+    .stars3 {
+        margin-left: 55vw;
+        margin-top: -5vh;
+        height: 42vh;
+        width: 100px;
+        position: absolute;
+    }
+
+}
