@@ -78,13 +78,21 @@
                   <div class="card-body">
                     <!-- <h5 class="card-title">Get all the data</h5> -->
                     <p class="card-text">All data including motion and not motion.</p>
-                    <a 
+                    <!-- <a 
                       routerLink="/serial-data/:data" 
                       class="btn btn-primary card-button" 
                       (click)="getSerialData()"
                       style="background-color: #2a115c;
                     color: rgb(240, 238, 244);"
+                    >Get Data</a> -->
+
+                    <a 
+                      routerLink="/serial-data/:data" 
+                      class="btn btn-primary card-button" 
+                      style="background-color: #2a115c;
+                    color: rgb(240, 238, 244);"
                     >Get Data</a>
+
                   </div>
                 </div>
             </div>
@@ -106,10 +114,17 @@
                 <div class="card-body">
                   <!-- <h5 class="card-title">Get Motion Data</h5> -->
                   <p class="card-text">All motion data: time at which motion in detected. </p>
-                  <a 
+                  <!-- <a 
                     routerLink="/motion-data/:data" 
                     class="btn btn-primary card-button" 
                     (click)="getMotionData()"
+                    style="background-color: #2a115c;
+                    color: rgb(239, 239, 243);"
+                  >Get Motion Data</a> -->
+
+                  <a 
+                    routerLink="/motion-data/:data" 
+                    class="btn btn-primary card-button" 
                     style="background-color: #2a115c;
                     color: rgb(239, 239, 243);"
                   >Get Motion Data</a>

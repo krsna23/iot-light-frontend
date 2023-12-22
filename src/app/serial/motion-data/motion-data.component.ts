@@ -14,16 +14,16 @@ export class MotionDataComponent {
 
   constructor(private route: ActivatedRoute) {}
   
-  ngOnInit() {
-    this.route.params.subscribe(params => {
-      const data = params['data'];
-      if (data !== undefined) {
-        console.log("Params: ", data);
-        this.motionData = JSON.parse(data);
-        console.log(this.motionData);
-      } else {
-        console.log("Data parameter not found.");
-      }
-    });
-  }
+  // ngOnInit() {
+  //   this.route.params.subscribe(params => {
+  //     const data = params['data'];
+  //     if (data !== undefined) {
+  //       console.log("Params: ", data);
+  //       this.motionData = JSON.parse(data);
+  //       console.log(this.motionData);
+  //     } else {
+  //       console.log("Data parameter not found.");
+  //     }
+  //   });
+  // }
 }

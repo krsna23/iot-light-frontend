@@ -6,6 +6,7 @@ body{
 main{
     margin: 8px;
 }
+
 .logo{
     font-size: 2vw;
     color: rgb(215, 183, 215);
@@ -282,7 +283,6 @@ td{
         margin-left: 55vw;
         margin-top: 5vh;
         width: 32vw;
-
     }
     
     .stars3 {
